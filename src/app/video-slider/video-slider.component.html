@@ -1,0 +1,21 @@
+<div class="videoSidebar">
+    <div class="videoSidebar__button">
+        <button mat-fab color="white" [class]="'slider-icon-btn'" (click)="like()" size="large"
+            aria-label="Example icon button with a menu icon">
+            <mat-icon aria-hidden="false" [class]="isLicked?'slider-icon icon-liked':'slider-icon'"
+                aria-label="Example home icon">thumb_up</mat-icon>
+        </button>
+    </div>
+    <div class="videoSidebar__button">
+        <button mat-fab color="white" [class]="'slider-icon-btn'" size="large"
+            aria-label="Example icon button with a menu icon">
+            <mat-icon aria-hidden="false" [class]="'slider-icon'" aria-label="Example home icon">message</mat-icon>
+        </button>
+    </div>
+    <div class="videoSidebar__button">
+        <button mat-fab color="white" [class]="'slider-icon-btn'" size="large"
+            aria-label="Example icon button with a menu icon">
+            <mat-icon aria-hidden="false" [class]="'slider-icon'" aria-label="Example home icon">share</mat-icon>
+        </button>
+    </div>
+</div>

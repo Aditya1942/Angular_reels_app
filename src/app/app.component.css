@@ -1,0 +1,73 @@
+html {
+  scroll-snap-type: y proximity;
+}
+
+._root {
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+._root > div {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+._content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  overflow: scroll;
+  width: 100%;
+  scroll-snap-type: y mandatory;
+}
+._content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+._content {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media screen and (max-width: 900px) {
+  ._root > div {
+    background-color: aqua;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  ._root > div {
+    background-color: aqua;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  ._root > div {
+    background-color: aqua;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  ._root > div {
+    background-color: aqua;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}

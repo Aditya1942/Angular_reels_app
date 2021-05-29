@@ -1,0 +1,11 @@
+<div class="video">
+    <video (click)="onVideoClick($event)" #videoId [src]="videoUrl"></video>
+    <div class="videoPaused" (click)="onVideoClick(videoId)">
+        <div *ngIf="!isPlaying">
+            <mat-icon aria-hidden="false" [class]="'pauseBtn'" aria-label="Example home icon">play_circle_outline
+            </mat-icon>
+        </div>
+    </div>
+    <app-video-slider></app-video-slider>
+    <app-video-footer [username]='username'></app-video-footer>
+</div>

@@ -1,5 +1,7 @@
 # AngularTikTok
 
+live demo > [Click Here](https://modular-temple-285411.web.app/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.13.
 
 ## Development server
